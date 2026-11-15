@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workout — My Day</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="workout">
+  <header class="site-header">
+    <a class="brand" href="index.html">My Day</a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="index.html">Dashboard</a><a href="diet.html">Diet</a><a class="active" href="workout.html">Workout</a><a href="college.html">College</a><a href="daily-goals.html">Daily goals</a><a href="goals.html">All goals</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-intro"><p class="muted" id="today-date"></p><h1>Gym & workout</h1><p>Check off each exercise as you finish it.</p></section>
+    <section class="card">
+      <div class="section-heading"><div><h2>Today's exercises</h2><p class="muted">Full body workout</p></div><span class="count-label" id="workout-count"></span></div>
+      <div id="workout-list" class="item-list"></div>
+    </section>
+  </main>
+  <footer>Changes are saved on this device.</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily goals — My Day</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="daily-goals">
+  <header class="site-header">
+    <a class="brand" href="index.html">My Day</a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="index.html">Dashboard</a><a href="diet.html">Diet</a><a href="workout.html">Workout</a><a href="college.html">College</a><a class="active" href="daily-goals.html">Daily goals</a><a href="goals.html">All goals</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-intro"><p class="muted" id="today-date"></p><h1>Daily goals</h1><p>Small everyday tasks that help you stay on track.</p></section>
+    <section class="card">
+      <div class="section-heading"><div><h2>Today's goals</h2><p class="muted">Mark each goal complete when you've done it.</p></div><span class="count-label" id="daily-count"></span></div>
+      <div id="daily-goal-list" class="item-list"></div>
+      <form class="add-form" id="daily-goal-form"><label class="sr-only" for="daily-goal-input">New daily goal</label><input id="daily-goal-input" type="text" maxlength="70" placeholder="Add a daily goal..." required><button class="button" type="submit">Add</button></form>
+    </section>
+  </main>
+  <footer>Changes are saved on this device.</footer>
+</body>
+</html>

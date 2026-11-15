@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Day — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <header class="site-header">
+    <a class="brand" href="index.html">My Day</a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="active" href="index.html">Dashboard</a>
+      <a href="diet.html">Diet</a>
+      <a href="workout.html">Workout</a>
+      <a href="college.html">College</a>
+      <a href="daily-goals.html">Daily goals</a>
+      <a href="goals.html">All goals</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-intro">
+      <p class="muted" id="today-date"></p>
+      <h1>My dashboard</h1>
+      <p>Keep your health, studies, and goals in one place.</p>
+    </section>
+    <section class="summary-grid" aria-label="Today's summary">
+      <a class="summary-card" href="daily-goals.html"><span>Daily goals done</span><strong id="dash-daily">0 / 0</strong></a>
+      <a class="summary-card" href="college.html"><span>Attendance</span><strong id="dash-attendance">0%</strong></a>
+      <a class="summary-card" href="college.html"><span>Assignments pending</span><strong id="dash-assignments">0</strong></a>
+      <a class="summary-card" href="workout.html"><span>Workout exercises done</span><strong id="dash-workout">0 / 0</strong></a>
+    </section>
+    <section class="card">
+      <div class="section-heading">
+        <div><h2>Sections</h2><p class="muted">Open a section to see and update its details.</p></div>
+      </div>
+      <div class="section-links">
+        <a href="diet.html"><strong>Diet plan</strong><span>Meals for the day</span></a>
+        <a href="workout.html"><strong>Gym & workout</strong><span>Exercises and progress</span></a>
+        <a href="college.html"><strong>College</strong><span>Attendance and assignments</span></a>
+        <a href="daily-goals.html"><strong>Daily goals</strong><span>Everyday habits and tasks</span></a>
+        <a href="goals.html"><strong>All goals</strong><span>Longer-term goals and progress</span></a>
+      </div>
+    </section>
+    <section class="card">
+      <div class="section-heading">
+        <div><h2>Daily goals</h2><p class="muted">A quick look at today's goals.</p></div>
+        <a class="plain-link" href="daily-goals.html">See all</a>
+      </div>
+      <div id="dashboard-daily-list" class="item-list"></div>
+    </section>
+  </main>
+  <footer>Changes are saved on this device.</footer>
+</body>
+</html>
