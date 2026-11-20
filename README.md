@@ -39,7 +39,7 @@ Follow these steps to run the project locally.
 
 ## 🌐 Live Demo
 
-[Visit My Day](YOUR_LIVE_WEBSITE_URL)
+[Visit My Day](https://abhi-dev-coder26.github.io/My-Day-1/daily-goals.html)
 
 ## 🎯 Project Goal
 
